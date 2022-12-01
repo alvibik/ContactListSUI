@@ -11,6 +11,11 @@
 		C18F36C32938AF3500027CDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18F36C22938AF3500027CDA /* ContentView.swift */; };
 		C18F36C52938AF3700027CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18F36C42938AF3700027CDA /* Assets.xcassets */; };
 		C18F36C82938AF3700027CDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18F36C72938AF3700027CDA /* Preview Assets.xcassets */; };
+		C18F36CF2938B0DC00027CDA /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18F36CE2938B0DC00027CDA /* DataStore.swift */; };
+		C18F36D22938B13500027CDA /* Persons.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18F36D12938B13500027CDA /* Persons.swift */; };
+		C18F36D52938B25200027CDA /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18F36D42938B25200027CDA /* ContactListView.swift */; };
+		C18F36D72938B43400027CDA /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18F36D62938B43400027CDA /* ContactDetailView.swift */; };
+		C18F36D92938B45300027CDA /* ContactSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18F36D82938B45300027CDA /* ContactSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		C18F36C22938AF3500027CDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C18F36C42938AF3700027CDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C18F36C72938AF3700027CDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C18F36CE2938B0DC00027CDA /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		C18F36D12938B13500027CDA /* Persons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persons.swift; sourceTree = "<group>"; };
+		C18F36D42938B25200027CDA /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		C18F36D62938B43400027CDA /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		C18F36D82938B45300027CDA /* ContactSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +46,7 @@
 			isa = PBXGroup;
 			children = (
 				C18F36BF2938AF3500027CDA /* ContactListSUI */,
+				C18F36C42938AF3700027CDA /* Assets.xcassets */,
 				C18F36BE2938AF3500027CDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,8 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				C18F36C02938AF3500027CDA /* ContactListSUIApp.swift */,
-				C18F36C22938AF3500027CDA /* ContentView.swift */,
-				C18F36C42938AF3700027CDA /* Assets.xcassets */,
+				C18F36DA2938F92300027CDA /* View */,
+				C18F36D32938B15200027CDA /* Model */,
+				C18F36D02938B11200027CDA /* Services */,
 				C18F36C62938AF3700027CDA /* Preview Content */,
 			);
 			path = ContactListSUI;
@@ -65,6 +77,33 @@
 				C18F36C72938AF3700027CDA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C18F36D02938B11200027CDA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C18F36CE2938B0DC00027CDA /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C18F36D32938B15200027CDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C18F36D12938B13500027CDA /* Persons.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C18F36DA2938F92300027CDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C18F36C22938AF3500027CDA /* ContentView.swift */,
+				C18F36D42938B25200027CDA /* ContactListView.swift */,
+				C18F36D62938B43400027CDA /* ContactDetailView.swift */,
+				C18F36D82938B45300027CDA /* ContactSectionView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18F36D72938B43400027CDA /* ContactDetailView.swift in Sources */,
+				C18F36D52938B25200027CDA /* ContactListView.swift in Sources */,
+				C18F36D92938B45300027CDA /* ContactSectionView.swift in Sources */,
 				C18F36C32938AF3500027CDA /* ContentView.swift in Sources */,
+				C18F36D22938B13500027CDA /* Persons.swift in Sources */,
+				C18F36CF2938B0DC00027CDA /* DataStore.swift in Sources */,
 				C18F36C12938AF3500027CDA /* ContactListSUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
